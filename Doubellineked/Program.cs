@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Doubellineked
@@ -33,8 +36,27 @@ namespace Doubellineked
 
     public void addNode()
     {
+        int nim;
+        string nm;
+        Console.Write("\nEnter the roll number of the student: ")
+        nim = Console.ReadLine();
+        Node newNode = new Node();
+        newNode.noMhs = nim;
+        newNode.name = nm;
 
+        //check if the LIst empty
+        if (START == null) || nim <== START.noMHs)
+                if ((START != null) && (nim == START.noMhs)
+        {
+            Console.WriteLine("\nDuplicate number  not allowed");
+            return;
+        }
+        newNode.next = START;
+        if (START != null)
+            START.prev = null;
+        return true;
     }
+}
 internal class Program
     {
         static void Main(string[] args)
