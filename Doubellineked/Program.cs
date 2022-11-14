@@ -31,7 +31,10 @@ namespace Doubellineked
         START = null;
     }
 
-    public void
+    public void addNode()
+    {
+
+    }
 internal class Program
     {
         static void Main(string[] args)
